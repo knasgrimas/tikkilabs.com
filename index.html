@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TikkiLabs AB</title>
-  <meta name="description" content="TikkiLabs AB — Software development company based in Sweden.">
+  <meta name="description" content="TikkiLabs AB — A Swedish software studio building mobile and web applications for everyday utility, health, and productivity.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -146,6 +146,42 @@
       line-height: 1.7;
     }
 
+    .about p + p {
+      margin-top: 14px;
+    }
+
+    /* --- Services --- */
+    .services h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      max-width: 640px;
+      margin-bottom: 24px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      max-width: 720px;
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .service-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .service-item p {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
     /* --- Contact --- */
     .contact h2 {
       font-size: clamp(1.4rem, 3vw, 2rem);
@@ -168,6 +204,13 @@
     .contact-email:hover {
       background: rgba(255, 255, 255, 0.08);
       border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .contact-details {
+      margin-top: 32px;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      line-height: 1.8;
     }
 
     /* --- Divider --- */
@@ -216,13 +259,14 @@
     <a href="/" class="logo">TikkiLabs</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section class="panel hero">
     <h1>TikkiLabs</h1>
-    <p>Software development company based in Sweden.</p>
+    <p>A Swedish software studio building mobile and web applications for everyday life.</p>
     <div class="scroll-hint">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
         <path d="M8 3v10M3 8l5 5 5-5"/>
@@ -231,17 +275,47 @@
   </section>
 
   <section class="panel about" id="about">
-    <h2>We build software.</h2>
+    <h2>About TikkiLabs</h2>
     <div class="divider"></div>
-    <p>TikkiLabs AB designs and develops applications and digital products. We focus on quality, simplicity, and getting things right.</p>
+    <p>TikkiLabs AB is a software studio founded in 2026 and based in Malmö, Sweden. We design, develop, and publish mobile and web applications that solve real, everyday problems across domains like health, productivity, and personal utility.</p>
+    <p>We believe in building software that is thoughtfully designed, reliable, and genuinely useful. Every product we create starts with a clear purpose and is crafted with attention to quality and simplicity.</p>
+    <p>As a registered Swedish company (org.nr 559577-7417), we are committed to responsible development practices, user privacy, and long-term product quality.</p>
+  </section>
+
+  <section class="panel services" id="services">
+    <h2>What We Build</h2>
+    <div class="divider"></div>
+    <div class="services-grid">
+      <div class="service-item">
+        <h3>Mobile Applications</h3>
+        <p>Native iOS and Android applications designed for performance, usability, and seamless integration with platform capabilities.</p>
+      </div>
+      <div class="service-item">
+        <h3>Web Applications</h3>
+        <p>Responsive, modern web applications built with reliable technologies and a focus on clean user experience.</p>
+      </div>
+      <div class="service-item">
+        <h3>Health &amp; Wellness</h3>
+        <p>Tools that help people track, understand, and improve their well-being through thoughtful design and useful functionality.</p>
+      </div>
+      <div class="service-item">
+        <h3>Productivity &amp; Utility</h3>
+        <p>Applications that simplify daily tasks and routines, helping users stay organized and focused on what matters.</p>
+      </div>
+    </div>
   </section>
 
   <section class="panel contact" id="contact">
     <h2>Get in touch</h2>
     <div class="divider"></div>
     <a href="mailto:contact@tikkilabs.com" class="contact-email">contact@tikkilabs.com</a>
+    <div class="contact-details">
+      <p>TikkiLabs AB</p>
+      <p>Malmö, Sweden</p>
+      <p>Org.nr 559577-7417</p>
+    </div>
     <footer>
-      <span>&copy; 2026 TikkiLabs AB</span>
+      <span>&copy; 2026 TikkiLabs AB &middot; Org.nr 559577-7417</span>
       <a href="/privacy.html">Privacy Policy</a>
     </footer>
   </section>
