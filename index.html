@@ -188,7 +188,6 @@
       justify-content: space-between;
       padding-top: 120px;
       padding-bottom: 0;
-      scroll-snap-align: none;
     }
 
     .contact-body {
@@ -308,9 +307,10 @@
         opacity: 0.85;
       }
 
-      .panel { padding: 80px 24px; }
+      .panel { padding: 80px 24px; scroll-snap-align: none; }
       footer { padding: 20px 24px; flex-direction: column; gap: 8px; text-align: center; }
       .contact { padding-top: 80px; }
+      html { scroll-snap-type: none; }
     }
   </style>
 </head>
