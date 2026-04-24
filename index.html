@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <title>TikkiLabs AB</title>
   <meta name="description" content="TikkiLabs AB — A Swedish software studio building mobile and web applications for everyday utility, health, and productivity.">
   <link rel="icon" href="data:,">
@@ -183,6 +184,20 @@
     }
 
     /* --- Contact --- */
+    .contact {
+      justify-content: space-between;
+      padding-top: 120px;
+      padding-bottom: 0;
+    }
+
+    .contact-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      justify-content: center;
+    }
+
     .contact h2 {
       font-size: clamp(1.4rem, 3vw, 2rem);
       font-weight: 600;
@@ -223,10 +238,8 @@
 
     /* --- Footer (inside contact panel) --- */
     footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      width: 100%;
+      margin-top: auto;
       padding: 24px 40px;
       display: flex;
       justify-content: space-between;
@@ -296,6 +309,7 @@
 
       .panel { padding: 80px 24px; }
       footer { padding: 20px 24px; flex-direction: column; gap: 8px; text-align: center; }
+      .contact { padding-top: 80px; }
     }
   </style>
 </head>
@@ -372,14 +386,16 @@
   </section>
 
   <section class="panel contact" id="contact">
-    <h2>Get in touch</h2>
-    <div class="divider"></div>
-    <a href="mailto:contact@tikkilabs.com" class="contact-email">contact@tikkilabs.com</a>
-    <p class="contact-details" style="margin-top: 16px;">For business enquiries and app support</p>
-    <div class="contact-details">
-      <p>TikkiLabs AB</p>
-      <p>Malmö, Sweden</p>
-      <p>Org.nr 559577-7417</p>
+    <div class="contact-body">
+      <h2>Get in touch</h2>
+      <div class="divider"></div>
+      <a href="mailto:contact@tikkilabs.com" class="contact-email">contact@tikkilabs.com</a>
+      <p class="contact-details" style="margin-top: 16px;">For business enquiries and app support</p>
+      <div class="contact-details">
+        <p>TikkiLabs AB</p>
+        <p>Malmö, Sweden</p>
+        <p>Org.nr 559577-7417</p>
+      </div>
     </div>
     <footer>
       <span>&copy; 2026 TikkiLabs AB &middot; Org.nr 559577-7417</span>
